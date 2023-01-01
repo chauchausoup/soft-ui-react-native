@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import {Articles, Components, Home, Profile, Register, Pro} from '../screens';
+import {Articles, Components, Home, Profile, Register, Pro, Welcome} from '../screens';
 import {useScreenOptions, useTranslation} from '../hooks';
 
 const Stack = createStackNavigator();
@@ -12,6 +12,12 @@ export default () => {
 
   return (
     <Stack.Navigator screenOptions={screenOptions.stack}>
+	<Stack.Screen
+        name="Welcome"
+        component={Welcome}
+        options={{title: t('navigation.welcome')}}
+      />
+
       <Stack.Screen
         name="Home"
         component={Home}

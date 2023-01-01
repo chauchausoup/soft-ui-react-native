@@ -20,6 +20,8 @@ const Home = () => {
 
   return (
     <Block>
+    <Text h4 marginTop={sizes.s} paddingHorizontal={sizes.padding}>Charity or Party</Text>
+
       {/* search input */}
       <Block color={colors.card} flex={0} padding={sizes.padding}>
         <Input search placeholder={t('common.search')} />

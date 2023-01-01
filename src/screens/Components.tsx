@@ -164,6 +164,7 @@ const Inputs = () => {
         <Input success placeholder="Success" marginBottom={sizes.sm} />
         <Input danger placeholder="Error" marginBottom={sizes.sm} />
         <Input disabled placeholder="Disabled" marginBottom={sizes.sm} />
+        <Input  placeholder="Disabled" marginBottom={sizes.sm} multiline={true} />
       </Block>
     </Block>
   );
